@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Inter;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root{
+    --clr-primary-400: hsl(35, 77%, 62%);
+    --clr-primary-300: hsl(5, 85%, 63%);
+
+    --clr-netural-400: hsl(36, 100%, 99%);
+    --clr-netural-300: hsl(233, 8%, 79%);
+    --clr-neutral-200: hsl(236, 13%, 42%);
+    --clr-neutral-100: hsl(240, 100%, 5%);
+
+    --fs-xl: 5rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+    --fs-300: .825rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body{
+    font-size: var(--fs-400);
+}
+
+.container{
+    max-width: 1115px;
+    width: 100%;
+    height: 100dvh;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* header */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+
+/* main  content*/
+main{
+    margin-top: 30px;
+}
+.main-with-sidebar{
+    display: flex;
+    gap: 2rem;
+    border: 1px solid orangered;
+}
+
+.main-content{
+    width: 70%;
+}
+
+.hero-img{
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.main-content div{
+    display: flex;
+    /* gap: 1.5rem; */
+}
+
+.hero-h1{
+    width: 50%;
+    border: 1px solid orchid;
+    font-size: var(--fs-500);
+}
+
+.hero-about{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.hero-about p{
+    font-size: var(--fs-400);
+    color: var(--clr-netural-200);
+    font-weight: 400;
+}
+
+.hero-about button{
+    width: 115px;
+    height: 35px;
+    border: none;
+    background-color: var(--clr-primary-300);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: var(--clr-netural-400);
+}
+
+/* sidebar wrapper */
+
+.wrapper{
+    padding: 0 10px;
+}
+
+.wrapper ul li{
+    font-size: .7rem;
+}
+
+
+/* cars */
+.tree-card{
+    display: flex;
+    margin-top: 10px;
+}
+
+.card{
+    display: flex;
+    max-width: 355px;
+    width: 100%;
+    height: 155px;
+}
